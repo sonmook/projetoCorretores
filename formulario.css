@@ -1,0 +1,166 @@
+/* Reset de estilos para remover margens e paddings padrão dos navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilos para o container */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Estilos para o título */
+h1 {
+    margin-bottom: 20px;
+    color: #7a7a7a;
+}
+
+/* Estilos para o formulário */
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    margin: 0 auto;
+    border: 2px solid #007bff;
+}
+
+/* Estilos para os grupos de formulário */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Estilos para os rótulos */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+/* Estilos para as caixas de entrada de texto */
+input[type="text"] {
+    width: calc(100% - 16px);
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Estilos para o botão de envio */
+input[type="submit"] {
+    width: calc(100% - 16px);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.notification {
+    display: none;
+    background-color: #f2f2f2;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+.success {
+    background-color: #4caf50;
+    color: white;
+}
+.error {
+    background-color: #f44336;
+    color: white;
+}
+
+        /* Estilizando os links Editar e Excluir */
+
+        a.edit-link,
+        a.delete-link {
+            display: inline-block;
+            padding: 5px 10px;
+            text-decoration: none;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            color: #333;
+            background-color: #fff;
+            font-size: small;
+        }
+
+
+        
+        a.edit-link:hover,
+        a.delete-link:hover {
+            background-color: #f0f0f0;
+        }
+        
+        a.edit-link {
+            color: #4caf50;
+            border-color: #4caf50;
+        }
+        
+        a.delete-link {
+            color: #f00;
+            border-color: #f00;
+        }
+        
+        a.delete-link:hover {
+            background-color: #ffe6e6;
+        }
+        
+        /* Estilos para a tabela e os cabeçalhos */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            text-align: left;
+        }
+
+        th.titulo {
+            color: #4d4d4d;
+            padding: 10px 0px;
+   
+        }
+        
+        th.actions-header {
+            color: #4d4d4d;
+   
+        }
+
+        th.linhas {
+            font-weight: 100;
+            padding: 10px 0px;
+        }
